@@ -1,0 +1,35 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+env/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Secrets / env
+.env
+.env.*
+!.env.example
+*.pem
+
+# Data / generated artifacts (rebuildable — not source)
+output/
+batch/
+nbc_full.json
+embed_meta.json
+embeddings.npy
+chunks.jsonl
+
+# Evaluation sets, reports, and analysis (may contain PII)
+evaluation_set*.json
+evaluation_report*.csv
+hallucinations_review.json
+
+# Editor / OS
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
